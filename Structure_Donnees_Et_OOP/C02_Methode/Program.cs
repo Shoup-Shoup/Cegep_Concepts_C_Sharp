@@ -1,7 +1,4 @@
-﻿using System.Numerics;
-using System.Xml.Linq;
-
-namespace Methodes
+﻿namespace C02_Methode
 {
     internal class Program
     {
@@ -12,8 +9,13 @@ namespace Methodes
              *          une seule action dans une classe. 
              *      Par exemple, si on a une classe appelé "Voiture", la méthode "Démarrer" permettrait de démarer la voiture.
              *          On appelerait donc cette méthode une instance de la classe "Voiture"
-             *      Elle peut etre public, private, protected, ou internal, ce qui détermine qui peut l'appeler et y accéder, donc 
-             *          son niveau d'accès    
+             *      Il existe plusieur qualificateur de méthodes qui détermine qui peut l'appeler et y accéder, donc son niveau d'accès:  
+             *                  public =
+             *                  private =
+             *                  protected =
+             *                  abstract = 
+             *                  virtual = 
+             *                  override = 
              */
 
 
@@ -40,13 +42,16 @@ namespace Methodes
 
             double somme2 = Multiply(2, 4, 3);
 
+            Console.WriteLine();
 
 
             /*
-             * Exemple 2: Additionner différents nombres
+             * Exemple 2: Additionner différents nombres avec une classe
              */
 
-            Ex2_Additions calcul1 = new Ex2_Additions(); //Appel du constructeur par défaut
+            Console.WriteLine("----------------------Addition de nombres----------------------");
+
+            Ex2_Addition_Overload calcul1 = new Ex2_Addition_Overload(); //Appel du constructeur par défaut
 
             //Appel de la méthode pour additionner deux parametres
             Console.WriteLine($"voici le résultat {calcul1.Additionner(7, 8)}");
@@ -54,6 +59,10 @@ namespace Methodes
             Console.WriteLine($"voici le résultat {calcul1.Additionner(7.5f, 8.1f)}");
 
         }
+
+        /*
+         * Exemple 1: Method overload
+         */
 
         //Multiply 2 nombres
         static double Multiply(double a, double b)

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Methodes
+namespace C02_Methode
 {
-    internal class Ex2_Additions
+    internal class Ex2_Addition_Overload
     {
         int x, y, z;
 

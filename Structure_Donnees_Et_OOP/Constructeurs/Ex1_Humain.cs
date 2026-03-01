@@ -15,8 +15,12 @@ namespace Constructeurs
         //to write the constructor: public className(parametres)
         public Ex1_Humain(string name, int age, string address) //ceci est un constructeur paramétré puisqu'il contient des paramètres
         {
+            /* Pointeur this: 
+             *      Le this.nomAttribut permet de distinguer l'attribut du paramètre
+             *      Il fait référence à l'instance (objet) actuelle de la classe 
+             */
+
             //assigning fields: this.fieldName = parametreName;
-            //le this.nomAttribut permet de distinguer l'attribut du paramètre
             this.name = name;
             this.age = age;
             this.address = address;

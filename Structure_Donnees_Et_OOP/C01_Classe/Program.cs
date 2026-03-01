@@ -11,7 +11,10 @@
              *          Right click selected project --> select Add --> select Class... --> Change the name of the class 
              *          --> click the Add button
              *      On peut aussi créer une a la suite de la classe Program.cs (mais on utilise pas ca dans le cours en ce moment)
-             *      
+             *      Il existe plusieurs qualificateur de classe:
+             *                      public =
+             *                      abstract =
+             *                      static =
              */
 
 

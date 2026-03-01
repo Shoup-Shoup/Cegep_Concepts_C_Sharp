@@ -19,7 +19,7 @@ namespace Constructeurs
         public Ex2_Etudiant(string nom_1, string prenom_1, string departement_1, int age_1)
         {
             this.nom = nom_1;
-            departement = departement_1;
+            departement = departement_1; //pk pas de this. ??
             age = age_1;
         }
 
