@@ -1,4 +1,5 @@
-﻿using System.Xml.Linq;
+﻿using System.Numerics;
+using System.Xml.Linq;
 
 namespace Methodes
 {
@@ -16,8 +17,54 @@ namespace Methodes
              */
 
 
+            /* La surcharge de méthode:
+             *      Ce sont des méthodes qui partage le même nom, mais qui ont des paramètres différents ce qui les différencie
+             *          et les rend unique. Le nom de la méthode plus ces paramètres est ce qu'on appel la signature de la méthode
+             */
 
-          
+
+            /*
+             * Exemple 1: On veut parfois multiplier trois nombres ensemble et parfois deux nombres
+             */
+
+            Console.WriteLine("--------------Multiplication de deux nombres--------------");
+            Console.WriteLine();
+
+            double somme1 = Multiply(3, 2);
+
+            Console.WriteLine(somme1);
+            Console.WriteLine();
+
+            Console.WriteLine("--------------Multiplication de trois nombres--------------");
+            Console.WriteLine();
+
+            double somme2 = Multiply(2, 4, 3);
+
+
+
+            /*
+             * Exemple 2: Additionner différents nombres
+             */
+
+            Ex2_Additions calcul1 = new Ex2_Additions(); //Appel du constructeur par défaut
+
+            //Appel de la méthode pour additionner deux parametres
+            Console.WriteLine($"voici le résultat {calcul1.Additionner(7, 8)}");
+            Console.WriteLine($"voici le résultat {calcul1.Additionner(7, 8, 9)}");
+            Console.WriteLine($"voici le résultat {calcul1.Additionner(7.5f, 8.1f)}");
+
+        }
+
+        //Multiply 2 nombres
+        static double Multiply(double a, double b)
+        {
+            return a * b;
+        }
+
+        //Mutiply 3 nombres
+        static double Multiply(double a, double b, double c)
+        {
+            return a * b * c;
         }
     }
 }
