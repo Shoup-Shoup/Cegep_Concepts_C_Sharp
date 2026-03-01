@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace Constructeurs
+﻿namespace C04_Constructeur
 {
     internal class Program
     {

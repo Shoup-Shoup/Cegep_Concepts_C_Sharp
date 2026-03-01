@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Constructeurs
+namespace C04_Constructeur
 {
     internal class Ex2_Etudiant
     {

@@ -14,6 +14,7 @@
              *                  private =
              *                  protected =
              *                  abstract = 
+             *                  static = meaning the method belongs to the class and not the object
              *                  virtual = 
              *                  override = 
              */
@@ -26,7 +27,7 @@
 
 
             /*
-             * Exemple 1: On veut parfois multiplier trois nombres ensemble et parfois deux nombres
+             * Exemple 1: Method overload: On veut parfois multiplier trois nombres ensemble et parfois deux nombres
              */
 
             Console.WriteLine("--------------Multiplication de deux nombres--------------");
@@ -46,7 +47,7 @@
 
 
             /*
-             * Exemple 2: Additionner différents nombres avec une classe
+             * Exemple 2: Method overload: Additionner différents nombres avec une classe
              */
 
             Console.WriteLine("----------------------Addition de nombres----------------------");
@@ -57,6 +58,21 @@
             Console.WriteLine($"voici le résultat {calcul1.Additionner(7, 8)}");
             Console.WriteLine($"voici le résultat {calcul1.Additionner(7, 8, 9)}");
             Console.WriteLine($"voici le résultat {calcul1.Additionner(7.5f, 8.1f)}");
+
+            /*
+             * Exemple 3: Static modifier: we dont want each car to be able to start the race on their own individually 
+             */
+
+            /* Qualificateur static (pour une méthode ou un attribut):
+             *      Le membre qualifié de static appartiendra à la classe elle même et non à l'objet
+             *      Sans le keyword static, la méthode ou l'attribut appartient à chaque objet
+             */
+
+            Ex3_Car_StaticModifier car1 = new Ex3_Car_StaticModifier("Mustang");
+            Ex3_Car_StaticModifier car2 = new Ex3_Car_StaticModifier("Corvette");
+            Ex3_Car_StaticModifier car3 = new Ex3_Car_StaticModifier("Lambo");
+
+            Ex3_Car_StaticModifier.StartRace();//so its kind of like instead of calling each object individually to invoke the method to start the race, you invoke the method using the entire class, meaning all the cars at once
 
         }
 

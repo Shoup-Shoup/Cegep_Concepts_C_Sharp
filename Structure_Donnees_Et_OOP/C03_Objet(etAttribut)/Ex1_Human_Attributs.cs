@@ -15,7 +15,7 @@ namespace C03_Objet_etAttribut_
         *      Il existe plusieurs qualificateurs d'attributs:
         *                      private =
         *                      protected =
-        *                      static =
+        *                      static = meaning the field belongs to the class and not the object
         *                      readonly = 
         *                      const =
         */

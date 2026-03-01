@@ -40,6 +40,35 @@
 
             human2.Eat();
             human2.Sleep();
+
+            /*
+             * Exemple 2: Static modifier: If we have a race and want to keep track of the amount of cars in the race 
+             */
+
+            /* Qualificateur static (pour une méthode ou un attribut):
+             *      Le membre qualifié de static appartiendra à la classe elle même et non à l'objet
+             *      Sans le keyword static, la méthode ou l'attribut appartient à chaque objet
+             */
+
+            Console.WriteLine("-----------------Number of cars without using keyword static-----------------");
+            Console.WriteLine();
+
+            Ex2_Car_StaticModifier car1 = new Ex2_Car_StaticModifier("Mustang");
+            Ex2_Car_StaticModifier car2 = new Ex2_Car_StaticModifier("Corvette");
+            Ex2_Car_StaticModifier car3 = new Ex2_Car_StaticModifier("Lambo");
+
+            Console.WriteLine("Number of cars after adding car 1: " + car1.Ex1_numberOfCars);
+            Console.WriteLine("Number of cars after adding car 2: " + car2.Ex1_numberOfCars); //the number of cars will stay one
+
+            Console.WriteLine();
+
+            Console.WriteLine("-----------------Number of cars with keyword static-----------------");
+            Console.WriteLine();
+
+            Console.WriteLine("Number of cars total: " + Ex2_Car_StaticModifier.Ex2_numberOfCars);//must type the name of the class instead of the field to access a static field
+
+
+
         }
     }
 }

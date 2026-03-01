@@ -11,12 +11,16 @@
              *          Right click selected project --> select Add --> select Class... --> Change the name of the class 
              *          --> click the Add button
              *      On peut aussi créer une a la suite de la classe Program.cs (mais on utilise pas ca dans le cours en ce moment)
-             *      Il existe plusieurs qualificateur de classe:
+             *      Il existe plusieurs qualificateur (modifier en En) de classe:
              *                      public =
              *                      abstract =
-             *                      static =
+             *                      static = you wouldn't be able to create an object from a static class
+             *                               For exemple: the math class
+             *                                      To round a number you would not write:   Math math1 = new Math(); //creating an instance of the math class
+             *                                                                               math1.Round(3.1416) //calling the round method of the math class through the math1 object
+             *                                  
+             *                                      Instead you would just write:            Math.Round(3.1416) //Call the method through the class itself
              */
-
 
 
             /*
@@ -30,7 +34,6 @@
             Ex2_Messages.Hello();
             Ex2_Messages.Waiting();
             Ex2_Messages.Bye();
-
 
 
             /*
@@ -48,10 +51,10 @@
     }
 
     /*
-     * Exemple 1: Classe après la class Program.cs
+     * Exemple 1: Ecxrir la classe après la class internal class Program
      */
 
-    static class Ex1_Messages
+    static class Ex1_Messages //here we used static so we would not have to create an object to show the massages, same thing we the methods
     {
         public static void Hello()
         {

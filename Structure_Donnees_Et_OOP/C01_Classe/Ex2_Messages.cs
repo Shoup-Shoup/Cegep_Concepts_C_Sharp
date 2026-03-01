@@ -10,8 +10,6 @@ namespace C01_Classe
      * Exemple 2: Classe a l'extérieur de Program.cs
      */
 
-    //On va mettre satic pour le moment, mais jsp pk encore
-
     static internal class Ex2_Messages
     {
         public static void Hello()
