@@ -1,4 +1,4 @@
-﻿namespace Objets
+﻿namespace C03_Objet_etAttribut_
 {
     internal class Program
     {
@@ -20,7 +20,7 @@
 
             Console.WriteLine("---------------------Humain---------------------");
 
-            //Ici on va utilisé la class Ex1_Human comme si c'était un type de variable pour ensuite creér la variable humain1
+            //Ici on va utilisé la class Ex1_Human comme si c'était un type de variable pour ensuite creér la variable humain1. On appel ca une instance de la classe puisqu'on instancie un objet du type de la classe
             Ex1_Human_Attributs human1 = new Ex1_Human_Attributs();
 
             //Ici on accède aux attributs déjà déclaré dans la class et on instancie la variable en lui attribuant une valeur en écrivant: nom

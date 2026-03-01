@@ -9,7 +9,7 @@ namespace C05_Encapsulation
     internal class Ex3_Personne
     {
         /*
-         * Exemple 3: for some reason ici on a créer les set et get sur des lignes à part et il n'y a pas de cosntructeur aussi
+         * Exemple 3: for some reason ici on a créer les set et get sur des lignes à part et il n'y a pas de cosntructeur aussi, donc ce serait le constructeur par défaut qui est utilisé
          */
 
         //déclaration des attributs
