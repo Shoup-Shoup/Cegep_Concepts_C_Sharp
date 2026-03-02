@@ -74,6 +74,11 @@
 
             Ex3_Car_StaticModifier.StartRace();//so its kind of like instead of calling each object individually to invoke the method to start the race, you invoke the method using the entire class, meaning all the cars at once
 
+            /*
+             * Exemple 3: Méthodes abstraites
+             */
+
+
         }
 
         /*
@@ -91,5 +96,7 @@
         {
             return a * b * c;
         }
+
+        
     }
 }

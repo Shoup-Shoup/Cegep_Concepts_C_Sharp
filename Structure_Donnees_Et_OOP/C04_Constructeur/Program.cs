@@ -11,6 +11,8 @@
              *          l'espace mémoir pour l'objet
              *      Si on ne créer pas de constructeur, le compilateur va faire appel au constructeur par défaut, mais les données
              *          ne seront pas initialisé
+             *      Les variables qui seront mis dans le constructeur ce sont les variable que nous devront écrir en paramètre quand 
+             *      on va créer l'objet. Toutes les autres variable devront être instancier manuellement
              */
 
 

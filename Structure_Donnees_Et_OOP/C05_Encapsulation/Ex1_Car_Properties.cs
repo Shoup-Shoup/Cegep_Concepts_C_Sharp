@@ -26,8 +26,8 @@ namespace C05_Encapsulation
          *                      private = visible uniquement dans la classe elle-même (modificateur d'accès par défaut desattributs)
          *                      protected = visible dans la classe et la classe qui hérite de la classe mère
          *      Elle contient des accesseurs(getters en En) et des mutateurs (setters en En):
-         *                      getter = méthode qui permet de lire la valeur d'un attribut et ne modifie pas l'objet
-         *                      setter = méthode qui permet de modifier la valeur d'un attribut
+         *                      getter = méthode de consultation qui permet de lire la valeur d'un attribut et ne modifie pas l'objet
+         *                      setter = méthode de modification qui permet de modifier la valeur d'un attribut
          */
 
         //On l'écrit: modificateurAcces type NomAttribut {

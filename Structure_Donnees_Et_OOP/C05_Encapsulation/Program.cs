@@ -90,8 +90,6 @@
 
             //afficher les informations
             employe02.AfficherInformation();
-
-
         }
     }
 }
