@@ -45,10 +45,6 @@
              * Exemple 2: Static modifier: If we have a race and want to keep track of the amount of cars in the race 
              */
 
-            /* Qualificateur static (pour une méthode ou un attribut):
-             *      Le membre qualifié de static appartiendra à la classe elle même et non à l'objet
-             *      Sans le keyword static, la méthode ou l'attribut appartient à chaque objet
-             */
 
             Console.WriteLine("-----------------Number of cars without using keyword static-----------------");
             Console.WriteLine();

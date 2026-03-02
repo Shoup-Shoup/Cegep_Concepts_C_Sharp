@@ -75,10 +75,10 @@
 
             Console.WriteLine("--------------------------Compte Bancaire (constructeur)--------------------------");
 
-            Ex3_CompteEpargne_Constructeur epargne1 = new Ex3_CompteEpargne_Constructeur(2.4, "mari", "gau");
+            Ex3_CompteEpargne_ConstructeurBase epargne1 = new Ex3_CompteEpargne_ConstructeurBase(2.4, "mari", "gau");
             epargne1.AfficherInfo();
 
-            Ex3_CompteBancaire_Constructeur compte2 = epargne1;
+            Ex3_CompteBancaire_ConstructeurBase compte2 = epargne1;
 
 
         }

@@ -10,6 +10,11 @@ namespace C03_Objet_etAttribut_
     {
         string model;
 
+        /* Qualificateur static (pour une méthode ou un attribut):
+         *      Le membre qualifié de static appartiendra à la classe elle même et non à l'objet
+         *      Sans le keyword static, la méthode ou l'attribut appartient à chaque objet
+         */
+
         //Exemple sans le static
         public int Ex1_numberOfCars;
 

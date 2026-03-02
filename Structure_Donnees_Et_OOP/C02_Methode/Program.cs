@@ -13,16 +13,12 @@
              *                  public =
              *                  private =
              *                  protected =
-             *                  abstract = 
              *                  static = meaning the method belongs to the class and not the object
-             *                  virtual = 
+             *                  abstract = une méthode abstraite ne doit rien contenir, doit faire partie d'une classe abstract et 
+             *                      doit être redéfinie dans la classe dérivée (avec override)
+             *                  virtual = une méthode virtual autorise la redéfinition par une methode override de la classe dérivée,
+             *                      mais ce n'est pas obligatoire
              *                  override = 
-             */
-
-
-            /* La surcharge de méthode:
-             *      Ce sont des méthodes qui partage le même nom, mais qui ont des paramètres différents ce qui les différencie
-             *          et les rend unique. Le nom de la méthode plus ces paramètres est ce qu'on appel la signature de la méthode
              */
 
 
@@ -36,21 +32,23 @@
             double somme1 = Multiply(3, 2);
 
             Console.WriteLine(somme1);
-            Console.WriteLine();
 
+            Console.WriteLine();
             Console.WriteLine("--------------Multiplication de trois nombres--------------");
             Console.WriteLine();
 
             double somme2 = Multiply(2, 4, 3);
 
-            Console.WriteLine();
+            Console.WriteLine(somme2);
 
 
             /*
              * Exemple 2: Method overload: Additionner différents nombres avec une classe
              */
 
+            Console.WriteLine();
             Console.WriteLine("----------------------Addition de nombres----------------------");
+            Console.WriteLine();
 
             Ex2_Addition_Overload calcul1 = new Ex2_Addition_Overload(); //Appel du constructeur par défaut
 
@@ -59,14 +57,14 @@
             Console.WriteLine($"voici le résultat {calcul1.Additionner(7, 8, 9)}");
             Console.WriteLine($"voici le résultat {calcul1.Additionner(7.5f, 8.1f)}");
 
+
             /*
              * Exemple 3: Static modifier: we dont want each car to be able to start the race on their own individually 
              */
 
-            /* Qualificateur static (pour une méthode ou un attribut):
-             *      Le membre qualifié de static appartiendra à la classe elle même et non à l'objet
-             *      Sans le keyword static, la méthode ou l'attribut appartient à chaque objet
-             */
+            Console.WriteLine();
+            Console.WriteLine("----------------------Chose a car to race with----------------------");
+            Console.WriteLine();
 
             Ex3_Car_StaticModifier car1 = new Ex3_Car_StaticModifier("Mustang");
             Ex3_Car_StaticModifier car2 = new Ex3_Car_StaticModifier("Corvette");
@@ -75,8 +73,34 @@
             Ex3_Car_StaticModifier.StartRace();//so its kind of like instead of calling each object individually to invoke the method to start the race, you invoke the method using the entire class, meaning all the cars at once
 
             /*
-             * Exemple 3: Méthodes abstraites
+             * Exemple 4: Virtual methods and method overriding 
              */
+
+            Console.WriteLine();
+            Console.WriteLine("----------------------Animals making sounds----------------------");
+            Console.WriteLine();
+
+            Ex4_Dog_OverrideModifier dog = new Ex4_Dog_OverrideModifier();
+            Ex4_Cat_OverrideModifier cat = new Ex4_Cat_OverrideModifier();
+
+            dog.Speak(); //Me: "cat, invoke your speak method please", Cat goes: "meow"
+            cat.Speak();
+
+            /*
+             * Exemple 5: Methode ToString
+             */
+
+            Console.WriteLine();
+            Console.WriteLine("----------------------My car----------------------");
+            Console.WriteLine();
+
+            Ex5_Car_ToStringMethod car = new Ex5_Car_ToStringMethod("Chevy", "Corvette", 2022, "blue");
+
+            //if we dont override this method, the console will write: C02_Methode.Ex5_Car_ToStringMethod
+            Console.WriteLine(car.ToString());
+
+            //you could also just type the name of the object and it will do the same thing
+            Console.WriteLine(car);
 
 
         }

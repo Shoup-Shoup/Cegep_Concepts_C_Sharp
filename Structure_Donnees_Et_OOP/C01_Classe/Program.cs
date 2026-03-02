@@ -7,13 +7,14 @@
             /* Classes: 
              *      Dans le context de la programmation orienté objet, un classe est l'équivalent d'un type de variable,
              *          mais qui est crée par l'utilisateur et qui est utilisé par des objets (a blueprint to create an object)
-             *      Pour créer une classe personalisé il faut sortir de la classe Program.cs et ajouté une nouvelle classe a notre projet
-             *          Right click selected project --> select Add --> select Class... --> Change the name of the class 
+             *      Pour créer une classe personalisé il faut sortir de la classe Program.cs et ajouté une nouvelle classe a 
+             *          notre projet: Right click selected project --> select Add --> select Class... --> Change the name of the class 
              *          --> click the Add button
              *      On peut aussi créer une a la suite de la classe Program.cs (mais on utilise pas ca dans le cours en ce moment)
              *      Il existe plusieurs qualificateur (modifier en En) de classe:
              *                      public =
-             *                      abstract =
+             *                      abstract = Une classe abstraite ne peut pas être instancié directement, elle va donc servir de
+             *                          modèle pour d'autres classes et sera complété par la classe dérivée (héritage)
              *                      static = you wouldn't be able to create an object from a static class
              *                               For exemple: the math class
              *                                      To round a number you would not write:   Math math1 = new Math(); //creating an instance of the math class
@@ -35,7 +36,6 @@
             Ex2_Messages.Waiting();
             Ex2_Messages.Bye();
 
-
             /*
              * Exemple 3: Utiliser la clase comme type de variable
              */
@@ -46,6 +46,19 @@
             Ex3_Amimal chat = new Ex3_Amimal();
 
             Ex3_Amimal poisson = new Ex3_Amimal();
+
+
+            /*
+             * Exemple 4: Abstract Classes: We have a race and we want people to choose a vehicule
+             */
+
+            Ex4_Car_AbstractModifier car = new Ex4_Car_AbstractModifier();
+            Ex4_Bicycle_AbstractModifier bicycle = new Ex4_Bicycle_AbstractModifier();
+            Ex4_Boat_AbstractModifier boat = new Ex4_Boat_AbstractModifier();
+
+            // Ex4_Vehicule_AbstractModifier vehicule = new Ex4_Vehicule_AbstractModifier();
+            //We dont want people to be able to create a generic vehicule using this line, so we would make the vehicule class abstract (incomplete)
+
 
         }
     }
