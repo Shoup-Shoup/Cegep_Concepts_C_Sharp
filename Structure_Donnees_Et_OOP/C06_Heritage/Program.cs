@@ -16,11 +16,12 @@
              *          A ses propres méthodes personnelles
              */
 
+
             /*
              * Exemple 1: different sorts of vehicules
              */
 
-            Console.WriteLine("---------------Vehicules---------------");
+            Console.WriteLine("----------------Vehicules----------------");
             Console.WriteLine();
 
             Ex1_Car car  = new Ex1_Car();

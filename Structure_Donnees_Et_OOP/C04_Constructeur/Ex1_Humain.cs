@@ -12,6 +12,7 @@ namespace C04_Constructeur
         public int age;
         public string address;
 
+
         //to write the constructor: public className(parametres)
         public Ex1_Humain(string name, int age, string address) //ceci est un constructeur paramétré puisqu'il contient des paramètres
         {
