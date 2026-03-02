@@ -19,7 +19,7 @@ namespace C06_Heritage
          *          constructeur avec le mot clé base
          */
 
-        //Pour appeler le constructeur de base on doit écrir: public NomDeLaClasseFille(paramètres) : base(paramètresClasseMère)
+        //Pour appeler le constructeur de base on doit écrir: public NomDeLaClasseFille(paramètresClasseFille, paramètresClasseMère) : base(paramètresClasseMère)
         public Ex3_CompteEpargne_Constructeur(double tauxEpargne, string nom, string prenom) : base(nom, prenom)
         {
             this.tauxEpargne = tauxEpargne;
