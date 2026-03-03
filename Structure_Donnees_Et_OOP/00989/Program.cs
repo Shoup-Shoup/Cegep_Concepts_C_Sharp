@@ -1,4 +1,4 @@
-﻿namespace _9005
+﻿namespace _00989
 {
     internal class Program
     {
