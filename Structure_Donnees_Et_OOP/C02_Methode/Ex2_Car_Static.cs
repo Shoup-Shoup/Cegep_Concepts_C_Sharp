@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace C02_Methode
 {
-    internal class Ex3_Car_StaticModifier
+    internal class Ex2_Car_StaticModifier
     {
 
         string model;
 
-        public Ex3_Car_StaticModifier(string model)
+        public Ex2_Car_StaticModifier(string model)
         {
             this.model = model;
         }

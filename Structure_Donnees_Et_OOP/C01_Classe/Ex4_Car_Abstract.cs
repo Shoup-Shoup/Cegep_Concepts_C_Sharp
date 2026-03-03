@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C01_Classe
 {
-    internal class Ex4_Car_AbstractModifier : Ex4_Vehicule_AbstractModifier
+    internal class Ex4_Car_Abstract : Ex4_Vehicule_AbstractModifier
     {
         public int wheels = 4;
         int maxSpeed = 500;

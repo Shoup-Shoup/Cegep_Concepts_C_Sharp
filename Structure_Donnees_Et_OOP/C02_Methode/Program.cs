@@ -29,7 +29,9 @@
             Console.WriteLine("--------------Multiplication de deux nombres--------------");
             Console.WriteLine();
 
-            double somme1 = Multiply(3, 2);
+            Ex1_Multiplying_Overload calcul1 = new Ex1_Multiplying_Overload();
+
+            double somme1 = calcul1.Multiply(3, 2);
 
             Console.WriteLine(somme1);
 
@@ -37,64 +39,48 @@
             Console.WriteLine("--------------Multiplication de trois nombres--------------");
             Console.WriteLine();
 
-            double somme2 = Multiply(2, 4, 3);
+            double somme2 = calcul1.Multiply(2, 4, 3);
 
             Console.WriteLine(somme2);
 
 
             /*
-             * Exemple 2: Method overload: Additionner différents nombres avec une classe
-             */
-
-            Console.WriteLine();
-            Console.WriteLine("----------------------Addition de nombres----------------------");
-            Console.WriteLine();
-
-            Ex2_Addition_Overload calcul1 = new Ex2_Addition_Overload(); //Appel du constructeur par défaut
-
-            //Appel de la méthode pour additionner deux parametres
-            Console.WriteLine($"voici le résultat {calcul1.Additionner(7, 8)}");
-            Console.WriteLine($"voici le résultat {calcul1.Additionner(7, 8, 9)}");
-            Console.WriteLine($"voici le résultat {calcul1.Additionner(7.5f, 8.1f)}");
-
-
-            /*
-             * Exemple 3: Static modifier: we dont want each car to be able to start the race on their own individually 
+             * Exemple 2: Static modifier: we dont want each car to be able to start the race on their own individually 
              */
 
             Console.WriteLine();
             Console.WriteLine("----------------------Chose a car to race with----------------------");
             Console.WriteLine();
 
-            Ex3_Car_StaticModifier car1 = new Ex3_Car_StaticModifier("Mustang");
-            Ex3_Car_StaticModifier car2 = new Ex3_Car_StaticModifier("Corvette");
-            Ex3_Car_StaticModifier car3 = new Ex3_Car_StaticModifier("Lambo");
+            Ex2_Car_StaticModifier car1 = new Ex2_Car_StaticModifier("Mustang");
+            Ex2_Car_StaticModifier car2 = new Ex2_Car_StaticModifier("Corvette");
+            Ex2_Car_StaticModifier car3 = new Ex2_Car_StaticModifier("Lambo");
 
-            Ex3_Car_StaticModifier.StartRace();//so its kind of like instead of calling each object individually to invoke the method to start the race, you invoke the method using the entire class, meaning all the cars at once
+            Ex2_Car_StaticModifier.StartRace();//so its kind of like instead of calling each object individually to invoke the method to start the race, you invoke the method using the entire class, meaning all the cars at once
 
             /*
-             * Exemple 4: Virtual methods and method overriding 
+             * Exemple 3: Virtual methods and method overriding 
              */
 
             Console.WriteLine();
             Console.WriteLine("----------------------Animals making sounds----------------------");
             Console.WriteLine();
 
-            Ex4_Dog_OverrideModifier dog = new Ex4_Dog_OverrideModifier();
-            Ex4_Cat_OverrideModifier cat = new Ex4_Cat_OverrideModifier();
+            Ex3_Dog_Override dog = new Ex3_Dog_Override();
+            Ex3_Cat_Override cat = new Ex3_Cat_Override();
 
             dog.Speak(); //Me: "cat, invoke your speak method please", Cat goes: "meow"
             cat.Speak();
 
             /*
-             * Exemple 5: Methode ToString
+             * Exemple 4: Methode ToString
              */
 
             Console.WriteLine();
             Console.WriteLine("----------------------My car----------------------");
             Console.WriteLine();
 
-            Ex5_Car_ToStringMethod car = new Ex5_Car_ToStringMethod("Chevy", "Corvette", 2022, "blue");
+            Ex4_Car_ToString car = new Ex4_Car_ToString("Chevy", "Corvette", 2022, "blue");
 
             //if we dont override this method, the console will write: C02_Methode.Ex5_Car_ToStringMethod
             Console.WriteLine(car.ToString());
@@ -103,24 +89,6 @@
             Console.WriteLine(car);
 
 
-        }
-
-        /*
-         * Exemple 1: Method overload
-         */
-
-        //Multiply 2 nombres
-        static double Multiply(double a, double b)
-        {
-            return a * b;
-        }
-
-        //Mutiply 3 nombres
-        static double Multiply(double a, double b, double c)
-        {
-            return a * b * c;
-        }
-
-        
+        }        
     }
 }

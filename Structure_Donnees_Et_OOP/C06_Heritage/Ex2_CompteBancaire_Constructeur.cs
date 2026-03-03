@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace C06_Heritage
 {
-    internal class Ex3_CompteBancaire_ConstructeurBase
+    internal class Ex2_CompteBancaire_Constructeur
     {
         protected string Nom;
         protected string Prenom;
         public string Numero { get; set; }
 
-        public Ex3_CompteBancaire_ConstructeurBase(string nom, string prenom)
+        public Ex2_CompteBancaire_Constructeur(string nom, string prenom)
         {
             this.Nom = nom;
             this.Prenom = prenom;

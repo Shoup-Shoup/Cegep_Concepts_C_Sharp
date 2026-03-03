@@ -18,7 +18,7 @@
 
 
             /*
-             * Exemple 1: different sorts of vehicules
+             * Exemple 1: Heritage de base:  different sorts of vehicules
              */
 
             Console.WriteLine("----------------Vehicules----------------");
@@ -49,37 +49,16 @@
             boat.go();
             Console.WriteLine();
 
-
             /*
-             * Exemple 2: Compte Bancaire
-             */
-
-            Console.WriteLine("-----------------Compte Bancaire-----------------");
-
-            Ex2_CompteBancaire compte1 = new Ex2_CompteBancaire();
-            compte1.Nom = "Lol";
-            compte1.Prenom = "Vrm";
-            compte1.Numero = "123";
-            compte1.AfficherInfoCompte();
-
-            var compteEpargne = new Ex2_CompteEpargne(); //var pour ne pas déclarer de type en particulier si on ne le connais pas
-            compteEpargne.Nom = "Pineault";
-            compteEpargne.Prenom = "Louise";
-            compteEpargne.Numero = "5678";
-            compteEpargne.TauxEpargne = 2.3;
-            compteEpargne.AfficherInfoCompte();
-            compteEpargne.AfficherCompteEpargne();
-
-            /*
-             * Exemple 3: Constructeur et héritage
+             * Exemple 2: Constructeur hérité et keyword base:
              */
 
             Console.WriteLine("--------------------------Compte Bancaire (constructeur)--------------------------");
 
-            Ex3_CompteEpargne_ConstructeurBase epargne1 = new Ex3_CompteEpargne_ConstructeurBase(2.4, "mari", "gau");
+            Ex2_CompteEpargne_ConstructeurHerite epargne1 = new Ex2_CompteEpargne_ConstructeurHerite(2.4, "mari", "gau");
             epargne1.AfficherInfo();
 
-            Ex3_CompteBancaire_ConstructeurBase compte2 = epargne1;
+            Ex2_CompteBancaire_Constructeur compte2 = epargne1;
 
 
         }

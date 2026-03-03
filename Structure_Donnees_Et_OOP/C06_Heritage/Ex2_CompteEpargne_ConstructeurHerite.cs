@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C06_Heritage
 {
-    internal class Ex3_CompteEpargne_ConstructeurBase : Ex3_CompteBancaire_ConstructeurBase
+    internal class Ex2_CompteEpargne_ConstructeurHerite : Ex2_CompteBancaire_Constructeur
     {
         double tauxEpargne;
 
@@ -20,7 +20,7 @@ namespace C06_Heritage
          */
 
         //Pour appeler le constructeur de base on doit écrir: public NomDeLaClasseFille(paramètresClasseFille, paramètresClasseMère) : base(paramètresClasseMère)
-        public Ex3_CompteEpargne_ConstructeurBase(double tauxEpargne, string nom, string prenom) : base(nom, prenom)
+        public Ex2_CompteEpargne_ConstructeurHerite(double tauxEpargne, string nom, string prenom) : base(nom, prenom)
         {
             this.tauxEpargne = tauxEpargne;
         }

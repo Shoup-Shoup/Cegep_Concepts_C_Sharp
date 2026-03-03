@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C02_Methode
 {
-    internal class Ex4_Animal_VirtualModifier
+    internal class Ex3_Animal_Virtual
     {
         /* Virtual Methods:
          *      méthode d'une class de base qui peut être redéfinie dans une classe dérivée. Sans ce keyword, une méthode ne peut
