@@ -1,4 +1,4 @@
-﻿namespace C02_Methode
+﻿namespace _02_Methode
 {
     internal class Program
     {

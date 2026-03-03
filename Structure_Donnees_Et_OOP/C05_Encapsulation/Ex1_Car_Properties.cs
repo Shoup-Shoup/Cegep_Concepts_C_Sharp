@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C05_Encapsulation
+namespace _05_Encapsulation
 {
     internal class Ex1_Car_Properties
     {

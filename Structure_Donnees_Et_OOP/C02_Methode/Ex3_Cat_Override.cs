@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C02_Methode
+namespace _02_Methode
 {
     internal class Ex3_Cat_Override : Ex3_Animal_Virtual
     {

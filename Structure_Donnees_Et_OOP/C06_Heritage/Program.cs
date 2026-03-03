@@ -1,4 +1,4 @@
-﻿namespace C06_Heritage
+﻿namespace _06_Heritage
 {
     internal class Program
     {

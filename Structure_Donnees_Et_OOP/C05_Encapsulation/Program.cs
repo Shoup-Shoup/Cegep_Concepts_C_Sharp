@@ -1,4 +1,4 @@
-﻿namespace C05_Encapsulation
+﻿namespace _05_Encapsulation
 {
     internal class Program
     {

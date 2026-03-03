@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C04_Constructeur
+namespace _04_Constructeur
 {
     internal class Ex1_Humain_Parametre
     {

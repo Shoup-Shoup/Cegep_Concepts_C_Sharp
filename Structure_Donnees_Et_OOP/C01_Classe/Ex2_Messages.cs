@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C01_Classe
+namespace _01_Classe
 {
     /*
      * Exemple 2: Classe a l'extérieur de Program.cs

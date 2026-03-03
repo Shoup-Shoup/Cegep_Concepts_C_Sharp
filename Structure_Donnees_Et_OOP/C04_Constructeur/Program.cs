@@ -1,4 +1,4 @@
-﻿namespace C04_Constructeur
+﻿namespace _04_Constructeur
 {
     internal class Program
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C06_Heritage
+namespace _06_Heritage
 {
     internal class Ex2_CompteBancaire_Constructeur
     {
