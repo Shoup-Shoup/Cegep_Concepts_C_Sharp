@@ -24,7 +24,7 @@
             Console.WriteLine();
 
             //Au lieu d'instancier chaque variable individuellement, on peut maintenant juste les passer en paramètres de l'objet grace au constructeur
-            Ex1_Humain_Parametre human1 = new Ex1_Humain_Parametre("Morty", 14, "123 Street");
+            Ex1_Humain_Parametree human1 = new Ex1_Humain_Parametree("Morty", 14, "123 Street");
 
             human1.Living();
             human1.Aging();
@@ -32,8 +32,17 @@
 
             Console.WriteLine();
 
+            /*
+             * Exemple 2: Overloaded constructors: 
+             */
 
+            Ex2_Pizza_Overload pizza1 = new Ex2_Pizza_Overload("stuffed crust", "red sauce", "mozzarella", "pepperoni");
 
+            //creating a pizza without toppings
+            Ex2_Pizza_Overload pizza2 = new Ex2_Pizza_Overload("stuffed crust", "red sauce", "mozzarella");
+
+            //creating a pizza without toppings and cheese
+            Ex2_Pizza_Overload pizza3 = new Ex2_Pizza_Overload("stuffed crust", "red sauce");
         }
     }
 }

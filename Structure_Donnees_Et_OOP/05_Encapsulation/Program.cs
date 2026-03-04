@@ -13,7 +13,7 @@
 
             
             /*
-             * Exemple 1: Propriétés classic
+             * Exemple 1: Propriétés écriture moderne
              */
 
             Console.WriteLine("----------------Car----------------");
@@ -45,13 +45,13 @@
 
 
             /*
-             * Exemple 3: getters et setters coder sur des lignes à part
+             * Exemple 3: getters et setters avec écriture manuelle
              */
 
             Console.WriteLine("---------------------Personne---------------------");
             Console.WriteLine();
 
-            Ex3_Personne personne_01 = new Ex3_Personne();//fait appel au constructeur par defaut
+            Ex3_Personne_Manuelle personne_01 = new Ex3_Personne_Manuelle();//fait appel au constructeur par defaut
 
             //Affection des données
             personne_01.SetNom("LeBlanc");
@@ -67,29 +67,6 @@
 
             Console.WriteLine();
 
-            /*
-             * Exemple 4: propriétés auto implémenté et classe DateTime
-             */
-
-            Console.WriteLine("------------Employe et son Age------------");
-            Console.WriteLine();
-
-            DateTime Datenaissance1 = new DateTime(1980, 10, 20);
-            Ex4_Employe_DateTime employe01 = new Ex4_Employe_DateTime(Datenaissance1);
-            employe01.Nom = "Laure";
-            employe01.Prenom = "Leblanc";
-
-            //afficher les informations
-            employe01.AfficherInformation();
-
-
-            DateTime Datenaissance2 = new DateTime(1997, 10, 20);
-            Ex4_Employe_DateTime employe02 = new Ex4_Employe_DateTime(Datenaissance2);
-            employe01.Nom = "Maude";
-            employe01.Prenom = "Lafleur";
-
-            //afficher les informations
-            employe02.AfficherInformation();
         }
     }
 }

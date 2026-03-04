@@ -55,7 +55,7 @@
 
             Console.WriteLine("--------------------------Compte Bancaire (constructeur)--------------------------");
 
-            Ex2_CompteEpargne_ConstructeurHerite epargne1 = new Ex2_CompteEpargne_ConstructeurHerite(2.4, "mari", "gau");
+            Ex2_CompteEpargne_ConstructeurHeritee epargne1 = new Ex2_CompteEpargne_ConstructeurHeritee(2.4, "mari", "gau");
             epargne1.AfficherInfo();
 
             Ex2_CompteBancaire_Constructeur compte2 = epargne1;
