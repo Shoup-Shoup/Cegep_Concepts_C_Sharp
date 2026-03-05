@@ -8,5 +8,9 @@ namespace _07_Polymorphisme
 {
     internal class Ex1_Bicycle : Ex1_Vehicule
     {
+        public override void Go()
+        {
+            Console.WriteLine("The bicycle is moving!");
+        }
     }
 }

@@ -17,9 +17,9 @@
 
             /* Part 1: objects can identify as multiple things: */
 
-            Ex1_Car car = new Ex1_Car();
-            Ex1_Bicycle bicycle = new Ex1_Bicycle();
-            Ex1_Boat boat = new Ex1_Boat();
+            Ex1_Car car = new Ex1_Car(); //car identifies as an Object, a Car and a Vehicule
+            Ex1_Bicycle bicycle = new Ex1_Bicycle();//bicycle identifies as an Object, a Bicycle and a Vehicule
+            Ex1_Boat boat = new Ex1_Boat();//boat identifies as an Object, a Boat and a Vehicule
 
             //cant put a bicycle and a boat in the car class
             //Ex1_Car[] vehicules = { car, bicycle, boat };
@@ -29,6 +29,11 @@
 
             /* Part 2: Methods */
 
+            //al the objects in the array will use their go methods at the same time
+            foreach (Ex1_Vehicule vehicule in vehicules)
+            {
+                vehicule.Go();
+            }
         }
     }
 }
