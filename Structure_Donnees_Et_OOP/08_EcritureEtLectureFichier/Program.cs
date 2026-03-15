@@ -12,6 +12,8 @@
              *          un fichier existant.
              * 
              */
+
+            StreamReader file = new StreamReader("Data.csv");
         }
     }
 }
