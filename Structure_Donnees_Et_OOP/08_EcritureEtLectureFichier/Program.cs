@@ -13,7 +13,7 @@
              * 
              */
 
-            StreamReader file = new StreamReader("Data.csv");
+            StreamReader file = new StreamReader("Data.csv"); //sert a lire   
         }
     }
 }
