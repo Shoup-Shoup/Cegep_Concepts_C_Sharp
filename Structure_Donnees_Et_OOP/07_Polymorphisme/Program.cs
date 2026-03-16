@@ -17,6 +17,8 @@
 
             /* Part 1: objects can identify as multiple things: */
 
+            Console.WriteLine("---------------------Race---------------------");
+
             Ex1_Car car = new Ex1_Car(); //car identifies as an Object, a Car and a Vehicule
             Ex1_Bicycle bicycle = new Ex1_Bicycle();//bicycle identifies as an Object, a Bicycle and a Vehicule
             Ex1_Boat boat = new Ex1_Boat();//boat identifies as an Object, a Boat and a Vehicule
