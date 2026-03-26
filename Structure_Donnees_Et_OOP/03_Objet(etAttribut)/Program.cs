@@ -111,6 +111,32 @@ namespace _03_Objet_etAttribut_
             /*
              * Exemple 5: Objects as arguments
              */
+
+            Ex5_Car car7 = new Ex5_Car("Mustang", "red");            
+            ChangeColor(car7, "silver");
+            Console.WriteLine("car 1: " + car7.color + " " + car7.model);
+
+            Ex5_Car car8 = Copy(car7);
+            Console.WriteLine("copy of car 1: " + car8.color + " " + car8.model);
+
+        }
+        
+
+        /*
+         * Exemple 5: Objects as arguments
+         */
+
+        //Method to change color
+        public static void ChangeColor(Ex5_Car car, string color)
+        {
+            //car.color takes the field of the car class
+            car.color = color;
+        }
+
+        //Method to copy a car
+        public static Ex5_Car Copy(Ex5_Car car)
+        {
+            return new Ex5_Car(car.model, car.color); //using the model and color of the car passed in argument(paramètre)
         }
     }
 }
