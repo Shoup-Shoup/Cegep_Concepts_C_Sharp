@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _07_Polymorphisme
+{
+    internal interface Ex2_IPrey_Interface
+    {
+        /* Interface: 
+         *      Sorte de contrat qui définit ce qu’un objet doit pouvoir faire, sans dire comment il le fait
+         *      Une classe interface définie des méthodes et des propriétés
+         *      La classe interface défini ce que la classe derivée doit avoir et la classe dérivée défini comment elle doit le faire
+         *      A same class can inherit multiple interface classes
+         *      It also provides added security
+         */
+
+
+        void Flee(); //Implementing this method is the job of the inheriting class that is using this interface
+    }
+}

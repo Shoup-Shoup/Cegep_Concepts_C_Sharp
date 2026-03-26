@@ -29,6 +29,7 @@
             //so we find what all three objects have in common:
             Ex1_Vehicule[] vehicules = { car, bicycle, boat };
 
+
             /* Part 2: Methods */
 
             //al the objects in the array will use their go methods at the same time
@@ -36,6 +37,21 @@
             {
                 vehicule.Go();
             }
+
+            /*
+             * Exemple 2: Classe interface
+             */
+
+            Ex2_Rabbit rabbit = new Ex2_Rabbit();
+            rabbit.Flee();
+
+            Ex2_Tiger tiger = new Ex2_Tiger();
+            tiger.Hunt();
+
+            Ex2_Fish fish = new Ex2_Fish();
+            fish.Flee();
+            fish.Hunt();
+           
         }
     }
 }

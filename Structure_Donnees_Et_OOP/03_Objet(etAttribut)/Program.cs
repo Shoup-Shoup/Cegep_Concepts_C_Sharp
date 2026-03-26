@@ -68,7 +68,7 @@ namespace _03_Objet_etAttribut_
             Console.WriteLine("Number of cars total: " + Ex2_Car_AttributStatic.Ex2_numberOfCars);//must type the name of the class instead of the field to access a static field
 
             /*
-             * Exemple 3: Array of object
+             * Exemple 3: Array of objects
              */
 
             Console.WriteLine();
@@ -105,6 +105,10 @@ namespace _03_Objet_etAttribut_
 
             /*
              * Exemple 4: List of objects
+             */
+
+            /*
+             * Exemple 5: Objects as arguments
              */
         }
     }
