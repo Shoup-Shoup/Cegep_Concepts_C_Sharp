@@ -1,4 +1,4 @@
-﻿using C03_Objet_etAttribut_;
+﻿using _03_Objet_etAttribut_;
 
 namespace _03_Objet_etAttribut_
 {
