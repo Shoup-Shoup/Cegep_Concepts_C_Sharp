@@ -15,7 +15,7 @@
 
 
             /*
-             * Exemple 1: StreamReader
+             * Concept 1: StreamReader
              */
 
             Console.WriteLine();
@@ -37,7 +37,7 @@
 
 
             /*
-             * Exemple 2: Facons plus simple de faire streamReader
+             * Concept 2: Facons plus simple de faire streamReader
              */
 
             Console.WriteLine();
@@ -56,7 +56,7 @@
 
 
             /*
-             * Exemple 3: StreamWriter
+             * Concept 3: StreamWriter
              */
 
             StreamWriter writer = new StreamWriter("MyName.csv"); //if the file doesnt exist, the streamwriter class wil create one for us
@@ -72,7 +72,7 @@
 
 
             /*
-             * Exemple 4: Séparer et réutiliser les données d'un fichier avec des listes
+             * Concept 4: Séparer et réutiliser les données d'un fichier avec des listes
              */
 
             List<double> temps = new List<double>(); //on va pouvoir mettre les données dans des listes
@@ -112,7 +112,7 @@
 
 
             /*
-             * Exemple 5: Charger un fichier en mémoir avec un tableau en deux dimensions
+             * Concept 5: Charger un fichier en mémoir avec un tableau en deux dimensions
              */
 
             Console.WriteLine();

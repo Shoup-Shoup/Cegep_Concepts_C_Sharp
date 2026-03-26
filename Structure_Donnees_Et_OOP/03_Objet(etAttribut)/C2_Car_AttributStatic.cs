@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _03_Objet_etAttribut_
 {
-    internal class Ex2_Car_AttributStatic
+    internal class C2_Car_AttributStatic
     {
         string model;
 
@@ -21,7 +21,7 @@ namespace _03_Objet_etAttribut_
         //Adding keyword static
         public static int Ex2_numberOfCars;
 
-        public Ex2_Car_AttributStatic(string model)
+        public C2_Car_AttributStatic(string model)
         {
             this.model = model;
             Ex1_numberOfCars++; //incrémentation de number of cars pour que à chque fois qu'on créer un objet, ca augmente le nombre de +1

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace _03_Objet_etAttribut_
 {
-    internal class Ex3_Car
+    internal class C3_Car
     {
         public String model;
 
-        public Ex3_Car(String model)
+        public C3_Car(String model)
         {
             this.model = model;
         }

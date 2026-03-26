@@ -25,7 +25,7 @@ namespace _03_Objet_etAttribut_
             Console.WriteLine();
 
             //Ici on va utilisé la class Ex1_Human comme si c'était un type de variable pour ensuite creér la variable humain1. On appel ca une instance de la classe puisqu'on instancie un objet du type de la classe
-            Ex1_Human_Attributs human1 = new Ex1_Human_Attributs();
+            C1_Human_Attributs human1 = new C1_Human_Attributs();
 
             //Ici on accède aux attributs déjà déclaré dans la class et on instancie la variable en lui attribuant une valeur en écrivant: nom
             human1.name = "Rick";
@@ -37,7 +37,7 @@ namespace _03_Objet_etAttribut_
 
 
             //Comme on a créer une classe à part, on peut ensuite créer autant d'objet qu'on le désir
-            Ex1_Human_Attributs human2 = new Ex1_Human_Attributs();
+            C1_Human_Attributs human2 = new C1_Human_Attributs();
 
             human2.name = "Morty";
             human2.age = 14;
@@ -53,9 +53,9 @@ namespace _03_Objet_etAttribut_
             Console.WriteLine("-----------------Number of cars without using keyword static-----------------");
             Console.WriteLine();
 
-            Ex2_Car_AttributStatic car1 = new Ex2_Car_AttributStatic("Mustang");
-            Ex2_Car_AttributStatic car2 = new Ex2_Car_AttributStatic("Corvette");
-            Ex2_Car_AttributStatic car3 = new Ex2_Car_AttributStatic("Lambo");
+            C2_Car_AttributStatic car1 = new C2_Car_AttributStatic("Mustang");
+            C2_Car_AttributStatic car2 = new C2_Car_AttributStatic("Corvette");
+            C2_Car_AttributStatic car3 = new C2_Car_AttributStatic("Lambo");
 
             Console.WriteLine("Number of cars after adding car 1: " + car1.Ex1_numberOfCars);
             Console.WriteLine("Number of cars after adding car 2: " + car2.Ex1_numberOfCars); //the number of cars will stay one
@@ -65,7 +65,7 @@ namespace _03_Objet_etAttribut_
             Console.WriteLine("-----------------Number of cars with keyword static-----------------");
             Console.WriteLine();
 
-            Console.WriteLine("Number of cars total: " + Ex2_Car_AttributStatic.Ex2_numberOfCars);//must type the name of the class instead of the field to access a static field
+            Console.WriteLine("Number of cars total: " + C2_Car_AttributStatic.Ex2_numberOfCars);//must type the name of the class instead of the field to access a static field
 
             /*
              * Exemple 3: Array of objects
@@ -75,11 +75,11 @@ namespace _03_Objet_etAttribut_
             Console.WriteLine("-----------------Cars parked in a garage long way to display-----------------");
             Console.WriteLine();
 
-            Ex3_Car[] garage1 = new Ex3_Car[3];
+            C3_Car[] garage1 = new C3_Car[3];
 
-            Ex3_Car car4 = new Ex3_Car("Mustang");
-            Ex3_Car car5 = new Ex3_Car("Corvette");
-            Ex3_Car car6 = new Ex3_Car("Lambo");
+            C3_Car car4 = new C3_Car("Mustang");
+            C3_Car car5 = new C3_Car("Corvette");
+            C3_Car car6 = new C3_Car("Lambo");
 
             garage1[0] = car4;
             garage1[1] = car5;
@@ -95,9 +95,9 @@ namespace _03_Objet_etAttribut_
             Console.WriteLine("-----------------Cars parked in a garage short way to display-----------------");
             Console.WriteLine();
 
-            Ex3_Car[] garage2 = { new Ex3_Car("Mustang"), new Ex3_Car("Corvette"), new Ex3_Car("Lambo") };
+            C3_Car[] garage2 = { new C3_Car("Mustang"), new C3_Car("Corvette"), new C3_Car("Lambo") };
 
-            foreach (Ex3_Car car in garage2)
+            foreach (C3_Car car in garage2)
             {
                 Console.WriteLine(car);
             }
@@ -112,11 +112,11 @@ namespace _03_Objet_etAttribut_
              * Exemple 5: Objects as arguments
              */
 
-            Ex5_Car car7 = new Ex5_Car("Mustang", "red");            
+            C5_Car car7 = new C5_Car("Mustang", "red");            
             ChangeColor(car7, "silver");
             Console.WriteLine("car 1: " + car7.color + " " + car7.model);
 
-            Ex5_Car car8 = Copy(car7);
+            C5_Car car8 = Copy(car7);
             Console.WriteLine("copy of car 1: " + car8.color + " " + car8.model);
 
         }
@@ -127,16 +127,16 @@ namespace _03_Objet_etAttribut_
          */
 
         //Method to change color
-        public static void ChangeColor(Ex5_Car car, string color)
+        public static void ChangeColor(C5_Car car, string color)
         {
             //car.color takes the field of the car class
             car.color = color;
         }
 
         //Method to copy a car
-        public static Ex5_Car Copy(Ex5_Car car)
+        public static C5_Car Copy(C5_Car car)
         {
-            return new Ex5_Car(car.model, car.color); //using the model and color of the car passed in argument(paramètre)
+            return new C5_Car(car.model, car.color); //using the model and color of the car passed in argument(paramètre)
         }
     }
 }

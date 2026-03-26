@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _03_Objet_etAttribut_
 {
-    internal class Ex1_Human_Attributs
+    internal class C1_Human_Attributs
     {
         /*
         * Attributs (fields en anglais):
