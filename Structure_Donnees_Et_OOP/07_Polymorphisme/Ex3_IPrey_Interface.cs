@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _07_Polymorphisme
 {
-    internal interface Ex2_IPrey_Interface
+    internal interface Ex3_IPrey_Interface
     {
         /* Interface: 
          *      Sorte de contrat qui définit ce qu’un objet doit pouvoir faire, sans dire comment il le fait

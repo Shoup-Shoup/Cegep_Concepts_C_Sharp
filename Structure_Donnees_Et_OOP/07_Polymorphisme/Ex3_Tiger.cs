@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _07_Polymorphisme
 {
-    internal class Ex2_Tiger : Ex2_IPredator
+    internal class Ex3_Tiger : Ex3_IPredator
     {
         public void Hunt()
         {

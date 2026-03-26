@@ -59,28 +59,14 @@
             Ex2_Car_StaticModifier.StartRace();//so its kind of like instead of calling each object individually to invoke the method to start the race, you invoke the method using the entire class, meaning all the cars at once
 
             /*
-             * Exemple 3: Virtual methods and method overriding 
-             */
-
-            Console.WriteLine();
-            Console.WriteLine("----------------------Animals making sounds----------------------");
-            Console.WriteLine();
-
-            Ex3_Dog_Override dog = new Ex3_Dog_Override();
-            Ex3_Cat_Override cat = new Ex3_Cat_Override();
-
-            dog.Speak(); //Me: "cat, invoke your speak method please", Cat goes: "meow"
-            cat.Speak();
-
-            /*
-             * Exemple 4: Methode ToString
+             * Exemple 3: Methode ToString
              */
 
             Console.WriteLine();
             Console.WriteLine("----------------------My car----------------------");
             Console.WriteLine();
 
-            Ex4_Car_ToString car = new Ex4_Car_ToString("Chevy", "Corvette", 2022, "blue");
+            Ex3_Car_ToString car = new Ex3_Car_ToString("Chevy", "Corvette", 2022, "blue");
 
             //if we dont override this method, the console will write: C02_Methode.Ex5_Car_ToStringMethod
             Console.WriteLine(car.ToString());

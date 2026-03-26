@@ -1,4 +1,6 @@
-﻿namespace _07_Polymorphisme
+﻿using _02_Methode;
+
+namespace _07_Polymorphisme
 {
     internal class Program
     {
@@ -39,16 +41,30 @@
             }
 
             /*
-             * Exemple 2: Classe interface
+             * Exemple 2: méthode virtual et override
              */
 
-            Ex2_Rabbit rabbit = new Ex2_Rabbit();
+            Console.WriteLine();
+            Console.WriteLine("----------------------Animals making sounds----------------------");
+            Console.WriteLine();
+
+            Ex2_Dog dog = new Ex2_Dog();          
+            Ex2_Cat_Override cat = new Ex2_Cat_Override();
+
+            dog.Speak(); //Me: "cat, invoke your speak method please", Cat goes: "meow"
+            cat.Speak();
+
+            /*
+             * Exemple 3: Classe interface
+             */
+
+            Ex3_Rabbit rabbit = new Ex3_Rabbit();
             rabbit.Flee();
 
-            Ex2_Tiger tiger = new Ex2_Tiger();
+            Ex3_Tiger tiger = new Ex3_Tiger();
             tiger.Hunt();
 
-            Ex2_Fish fish = new Ex2_Fish();
+            Ex3_Fish fish = new Ex3_Fish();
             fish.Flee();
             fish.Hunt();
            

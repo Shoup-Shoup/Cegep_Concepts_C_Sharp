@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _07_Polymorphisme
+namespace _01_Classe
 {
-    internal interface Ex2_IPredator
+    internal class Ex4_Bicycle
     {
-        void Hunt();
+        public int wheels = 2;
+        int maxSpeed = 50;
     }
 }

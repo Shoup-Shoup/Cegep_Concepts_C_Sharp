@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _07_Polymorphisme
 {
-    internal class Ex2_Rabbit : Ex2_IPrey_Interface //to use the interface class you have to implement all the methods from said class
+    internal class Ex3_Rabbit : Ex3_IPrey_Interface //to use the interface class you have to implement all the methods from said class
     {
         public void Flee()
         {

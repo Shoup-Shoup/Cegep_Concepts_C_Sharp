@@ -52,9 +52,9 @@
              * Exemple 4: Abstract Classes: We have a race and we want people to choose a vehicule
              */
 
-            Ex4_Car_Abstract car = new Ex4_Car_Abstract();
-            Ex4_Bicycle_Abstract bicycle = new Ex4_Bicycle_Abstract();
-            Ex4_Boat_Abstract boat = new Ex4_Boat_Abstract();
+            Ex4_Car car = new Ex4_Car();
+            Ex4_Bicycle bicycle = new Ex4_Bicycle();
+            Ex4_Boat boat = new Ex4_Boat();
 
             // Ex4_Vehicule_AbstractModifier vehicule = new Ex4_Vehicule_AbstractModifier();
             //We dont want people to be able to create a generic vehicule using this line, so we would make the vehicule class abstract (incomplete)
