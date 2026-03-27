@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="Ex2_Car_Static.cs" />
+    <None Include="C2_Car_Static.cs" />
   </ItemGroup>
 
 </Project>

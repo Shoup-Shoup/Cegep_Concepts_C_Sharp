@@ -20,6 +20,7 @@
              * Concept 1: Constructeur Paramétré: Humain
              */
 
+            Console.WriteLine();
             Console.WriteLine("-------------Human-------------");
             Console.WriteLine();
 
@@ -29,8 +30,6 @@
             human1.Living();
             human1.Aging();
             human1.Doxxing();
-
-            Console.WriteLine();
 
             /*
              * Concept 2: Overloaded constructors: 

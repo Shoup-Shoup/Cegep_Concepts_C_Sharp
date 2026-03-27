@@ -21,6 +21,7 @@
              * Concept 1: Heritage de base:  different sorts of vehicules
              */
 
+            Console.WriteLine();
             Console.WriteLine("----------------Vehicules----------------");
             Console.WriteLine();
 
@@ -47,13 +48,14 @@
             Console.WriteLine(boat.speed);
             Console.WriteLine(boat.nbWheels);
             boat.go();
-            Console.WriteLine();
 
             /*
              * Concept 2: Constructeur hérité et keyword base:
              */
 
+            Console.WriteLine();
             Console.WriteLine("--------------------------Compte Bancaire (constructeur)--------------------------");
+            Console.WriteLine();
 
             C2_CompteEpargne_ConstructeurHeritee epargne1 = new C2_CompteEpargne_ConstructeurHeritee(2.4, "mari", "gau");
             epargne1.AfficherInfo();

@@ -17,9 +17,12 @@ namespace _07_Polymorphisme
              * Concept 1:  We have a race with 3 different vehicules
              */
 
+
             /* Part 1: objects can identify as multiple things: */
 
+            Console.WriteLine();
             Console.WriteLine("---------------------Race---------------------");
+            Console.WriteLine();
 
             C1_Car car = new C1_Car(); //car identifies as an Object, a Car and a Vehicule
             C1_Bicycle bicycle = new C1_Bicycle();//bicycle identifies as an Object, a Bicycle and a Vehicule
@@ -57,6 +60,10 @@ namespace _07_Polymorphisme
             /*
              * Concept 3: Classe interface
              */
+
+            Console.WriteLine();
+            Console.WriteLine("-----------------Preys and Predators-----------------");
+            Console.WriteLine();
 
             C3_Rabbit rabbit = new C3_Rabbit();
             rabbit.Flee();

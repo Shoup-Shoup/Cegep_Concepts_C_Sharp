@@ -14,7 +14,7 @@ namespace _01_Classe
      *          us from doing that because the code thinks the class is incomplete
      */
 
-    internal abstract class Ex4_Vehicule_AbstractModifier
+    internal abstract class C4_Vehicule_Abstract
     {
         public int speed = 0;
 

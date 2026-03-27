@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace _02_Methode
 {
-    internal class Ex3_Car_ToString
+    internal class C3_Car_ToString
     {     
         string make;
         string model;
         int year;
         string color;
 
-        public Ex3_Car_ToString(string make, string model, int year, string color)
+        public C3_Car_ToString(string make, string model, int year, string color)
         {
             this.make = make;
             this.model = model;

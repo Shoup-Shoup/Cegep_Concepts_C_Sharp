@@ -23,13 +23,13 @@
 
 
             /*
-             * Exemple 1: Method overload: On veut parfois multiplier trois nombres ensemble et parfois deux nombres
+             * Concept 1: Method overload: On veut parfois multiplier trois nombres ensemble et parfois deux nombres
              */
 
             Console.WriteLine("--------------Multiplication de deux nombres--------------");
             Console.WriteLine();
 
-            Ex1_Multiplying_Overload calcul1 = new Ex1_Multiplying_Overload();
+            C1_Multiplying_Overload calcul1 = new C1_Multiplying_Overload();
 
             double somme1 = calcul1.Multiply(3, 2);
 
@@ -45,7 +45,7 @@
 
 
             /*
-             * Exemple 2: Static modifier: we dont want each car to be able to start the race on their own individually 
+             * Concept 2: Static modifier: we dont want each car to be able to start the race on their own individually 
              */
 
             Console.WriteLine();
@@ -59,14 +59,14 @@
             Ex2_Car_StaticModifier.StartRace();//so its kind of like instead of calling each object individually to invoke the method to start the race, you invoke the method using the entire class, meaning all the cars at once
 
             /*
-             * Exemple 3: Methode ToString
+             * Concept 3: Methode ToString
              */
 
             Console.WriteLine();
             Console.WriteLine("----------------------My car----------------------");
             Console.WriteLine();
 
-            Ex3_Car_ToString car = new Ex3_Car_ToString("Chevy", "Corvette", 2022, "blue");
+            C3_Car_ToString car = new C3_Car_ToString("Chevy", "Corvette", 2022, "blue");
 
             //if we dont override this method, the console will write: C02_Methode.Ex5_Car_ToStringMethod
             Console.WriteLine(car.ToString());

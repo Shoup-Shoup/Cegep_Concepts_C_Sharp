@@ -10,7 +10,7 @@ namespace _01_Classe
      * Exemple 2: Classe a l'extérieur de Program.cs
      */
 
-    static internal class Ex2_Messages
+    static internal class C2_Messages
     {
         public static void Hello()
         {

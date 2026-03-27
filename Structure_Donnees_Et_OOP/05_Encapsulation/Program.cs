@@ -16,6 +16,7 @@
              * Concept 1: Propriétés écriture moderne
              */
 
+            Console.WriteLine();
             Console.WriteLine("----------------Car----------------");
             Console.WriteLine();
 
@@ -28,12 +29,11 @@
             //Since we try to put a speed over the limit, it will default back to 500
             Console.WriteLine("Car's speed: " + car.Speed);
 
-            Console.WriteLine();
-
             /*
              * Concept 2: Propriétés auto-implémenté
              */
 
+            Console.WriteLine();
             Console.WriteLine("-------------Animal-------------");
             Console.WriteLine();
 
@@ -41,13 +41,11 @@
 
             Console.WriteLine("type d'animal: " + animal1.Type);
 
-            Console.WriteLine();
-
-
             /*
              * Concept 3: getters et setters avec écriture manuelle
              */
 
+            Console.WriteLine();
             Console.WriteLine("---------------------Personne---------------------");
             Console.WriteLine();
 

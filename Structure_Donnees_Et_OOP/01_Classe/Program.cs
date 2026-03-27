@@ -25,46 +25,56 @@
 
 
             /*
-             * Exemple 1 et 2: Récupérer les méthodes de la classe (on va utiliser l'exemple 2)
+             * Concept 1 et 2: Récupérer les méthodes de la classe (on va utiliser le Concept 2)
              */
 
+            Console.WriteLine();
             Console.WriteLine("--------------------Afficher des Messages de base--------------------");
             Console.WriteLine();
 
             //on écrit: nomDeLaClasse.Methode(paramètres);
-            Ex2_Messages.Hello();
-            Ex2_Messages.Waiting();
-            Ex2_Messages.Bye();
+            C2_Messages.Hello();
+            C2_Messages.Waiting();
+            C2_Messages.Bye();
+
 
             /*
-             * Exemple 3: Utiliser la clase comme type de variable
+             * Concept 3: Utiliser la clase comme type de variable
              */
 
             //On viendrait déclaré ici plusieurs animaux différents du type Animal en écrivant: nomDeLaClasse nomDeLaVariable = new nomDeLaClasse();
-            Ex3_Amimal chien = new Ex3_Amimal();
+            C3_Amimal chien = new C3_Amimal();
 
-            Ex3_Amimal chat = new Ex3_Amimal();
+            C3_Amimal chat = new C3_Amimal();
 
-            Ex3_Amimal poisson = new Ex3_Amimal();
+            C3_Amimal poisson = new C3_Amimal();
 
 
             /*
-             * Exemple 4: Abstract Classes: We have a race and we want people to choose a vehicule
+             * Concept 4: Abstract Classes: We have a race and we want people to choose a vehicule
              */
 
-            Ex4_Car car = new Ex4_Car();
-            Ex4_Bicycle bicycle = new Ex4_Bicycle();
-            Ex4_Boat boat = new Ex4_Boat();
+            Console.WriteLine();
+            Console.WriteLine("--------------------Race--------------------");
+            Console.WriteLine();
 
-            // Ex4_Vehicule_AbstractModifier vehicule = new Ex4_Vehicule_AbstractModifier();
+            C4_Car car = new C4_Car();
+            C4_Bicycle bicycle = new C4_Bicycle();
+            C4_Boat boat = new C4_Boat();
+
+            // C4_Vehicule_Abstract vehicule = new C4_Vehicule_Abstract();
             //We dont want people to be able to create a generic vehicule using this line, so we would make the vehicule class abstract (incomplete)
 
 
+            //they can all use the methods from the inherited abstract class
+            car.go();
+            boat.go();
+            bicycle.go();
         }
     }
 
     /*
-     * Exemple 1: Ecxrir la classe après la class internal class Program
+     * Concept 1: Ecrir la classe après la class internal class Program
      */
 
     static class Ex1_Messages //here we used static so we would not have to create an object to show the massages, same thing we the methods
@@ -85,7 +95,7 @@
         }
     }
 
-    class Ex3_Amimal
+    class C3_Amimal
     {
         //Ceci est seulement un exemple pour comment utiliser les class comme type, donc on va rien mettre dans la classe pour le moment
     }

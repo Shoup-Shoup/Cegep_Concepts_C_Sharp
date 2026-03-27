@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _02_Methode
 {
-    internal class Ex1_Multiplying_Overload
+    internal class C1_Multiplying_Overload
     {
         double a, b, c;
 

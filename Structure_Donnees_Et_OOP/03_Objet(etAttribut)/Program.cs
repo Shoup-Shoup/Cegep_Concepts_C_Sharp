@@ -1,4 +1,5 @@
 ﻿using _03_Objet_etAttribut_;
+using C03_Objet_etAttribut_;
 
 namespace _03_Objet_etAttribut_
 {
@@ -107,10 +108,42 @@ namespace _03_Objet_etAttribut_
              * Concept 4: List of objects
              */
 
+            Console.WriteLine();
+            Console.WriteLine("-----------------PLayers-----------------");
+            Console.WriteLine();
+
+            List<C4_Player> players = new List<C4_Player>();
+
+            //First way to add players
+            C4_Player player1 = new C4_Player("Chad");
+            C4_Player player2 = new C4_Player("Steve");
+            C4_Player player3 = new C4_Player("Karen");
+
+            players.Add(player1);
+            players.Add(player2);
+            players.Add(player3);
+
+            //second way to add players
+            players.Add(new C4_Player("Mari"));
+            players.Add(new C4_Player("Fil"));
+            players.Add(new C4_Player("Ju"));
+
+            foreach (C4_Player player in players)
+            {
+                //with the field
+                Console.WriteLine(player.username);
+
+                //with the ToString method
+                Console.WriteLine(player);
+            }
 
             /*
              * Concept 5: Objects as arguments
              */
+
+            Console.WriteLine();
+            Console.WriteLine("-----------------Colors of a Mustang-----------------");
+            Console.WriteLine();
 
             C5_Car car7 = new C5_Car("Mustang", "red");            
             ChangeColor(car7, "silver");
