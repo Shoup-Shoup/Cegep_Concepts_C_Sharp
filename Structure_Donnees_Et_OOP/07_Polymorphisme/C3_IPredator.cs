@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace _07_Polymorphisme
 {
-    internal class Ex1_Car : Ex1_Vehicule
+    internal interface C3_IPredator
     {
-        public override void Go()
-        {
-            Console.WriteLine("The car is moving!");
-        }
+        void Hunt();
     }
 }

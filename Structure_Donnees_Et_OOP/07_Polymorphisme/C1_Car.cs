@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace _07_Polymorphisme
 {
-    internal class Ex3_Tiger : Ex3_IPredator
+    internal class C1_Car : C1_Vehicule
     {
-        public void Hunt()
+        public override void Go()
         {
-            Console.WriteLine("The tiger is looking for food");
+            Console.WriteLine("The car is moving!");
         }
     }
 }

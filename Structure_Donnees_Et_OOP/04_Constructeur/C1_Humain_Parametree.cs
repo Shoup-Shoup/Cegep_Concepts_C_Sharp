@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _04_Constructeur
 {
-    internal class Ex1_Humain_Parametree
+    internal class C1_Humain_Parametree
     {
         public string name;
         public int age;
@@ -14,7 +14,7 @@ namespace _04_Constructeur
 
 
         //to write the constructor: public className(parametres)
-        public Ex1_Humain_Parametree(string name, int age, string address) //ceci est un constructeur paramétré puisqu'il contient des paramètres
+        public C1_Humain_Parametree(string name, int age, string address) //ceci est un constructeur paramétré puisqu'il contient des paramètres
         {
             /* Pointeur this: 
              *      Le this.nomAttribut permet de distinguer l'attribut du paramètre

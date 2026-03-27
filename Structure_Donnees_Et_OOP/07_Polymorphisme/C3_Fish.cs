@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _07_Polymorphisme
 {
-    internal class Ex3_Fish : Ex3_IPrey_Interface, Ex3_IPredator //a class can inherit two interface classes
+    internal class C3_Fish : C3_IPrey_Interface, C3_IPredator //a class can inherit two interface classes
     {
         public void Flee()
         {

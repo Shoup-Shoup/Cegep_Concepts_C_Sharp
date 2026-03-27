@@ -11,16 +11,16 @@
              *          be locked which can also be a problem so we use encapsulation instead
              */
 
-            
+
             /*
-             * Exemple 1: Propriétés écriture moderne
+             * Concept 1: Propriétés écriture moderne
              */
 
             Console.WriteLine("----------------Car----------------");
             Console.WriteLine();
 
             //Create an object
-            Ex1_Car_Properties car = new Ex1_Car_Properties(400);
+            C1_Car_Properties car = new C1_Car_Properties(400);
 
             //I we try: car.speed = 1000000000; ---> it wont work because the attribute is now private, so you have to get the property instead
             car.Speed = 1000000000;
@@ -31,13 +31,13 @@
             Console.WriteLine();
 
             /*
-             * Exemple 2: Propriétés auto-implémenté
+             * Concept 2: Propriétés auto-implémenté
              */
 
             Console.WriteLine("-------------Animal-------------");
             Console.WriteLine();
 
-            Ex2_Animal_AutoImplemented animal1 = new Ex2_Animal_AutoImplemented("Chien");
+            C2_Animal_AutoImplemented animal1 = new C2_Animal_AutoImplemented("Chien");
 
             Console.WriteLine("type d'animal: " + animal1.Type);
 
@@ -45,13 +45,13 @@
 
 
             /*
-             * Exemple 3: getters et setters avec écriture manuelle
+             * Concept 3: getters et setters avec écriture manuelle
              */
 
             Console.WriteLine("---------------------Personne---------------------");
             Console.WriteLine();
 
-            Ex3_Personne_Manuelle personne_01 = new Ex3_Personne_Manuelle();//fait appel au constructeur par defaut
+            C3_Personne_Manuelle personne_01 = new C3_Personne_Manuelle();//fait appel au constructeur par defaut
 
             //Affection des données
             personne_01.SetNom("LeBlanc");

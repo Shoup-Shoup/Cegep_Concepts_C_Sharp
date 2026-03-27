@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _07_Polymorphisme
 {
-    internal class Ex1_Bicycle : Ex1_Vehicule
+    internal class C1_Bicycle : C1_Vehicule
     {
         public override void Go()
         {

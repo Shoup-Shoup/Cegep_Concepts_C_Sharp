@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _02_Methode
 {
-    internal class Ex2_Cat_Override : Ex2_Animal_Virtual
+    internal class C2_Cat_Override : C2_Animal_Virtual
     {
         /* Method Overriding:
          *      Lorsque une classe dérivée fournit sa propre version d'une méthode déjà définie et hérité par la classe de base

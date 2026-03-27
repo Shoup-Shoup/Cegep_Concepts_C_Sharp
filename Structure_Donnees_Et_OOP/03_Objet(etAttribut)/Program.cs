@@ -17,7 +17,7 @@ namespace _03_Objet_etAttribut_
 
 
             /*
-             * Exemple 1: Attributs: Créer un objet simple et l'afficher
+             * Concept 1: Attributs: Créer un objet simple et l'afficher
              */
 
             Console.WriteLine();
@@ -46,7 +46,7 @@ namespace _03_Objet_etAttribut_
             human2.Sleep();
 
             /*
-             * Exemple 2: Attribut et static modifier: If we have a race and want to keep track of the amount of cars in the race 
+             * Concept 2: Attribut et static modifier: If we have a race and want to keep track of the amount of cars in the race 
              */
 
             Console.WriteLine();
@@ -68,7 +68,7 @@ namespace _03_Objet_etAttribut_
             Console.WriteLine("Number of cars total: " + C2_Car_AttributStatic.Ex2_numberOfCars);//must type the name of the class instead of the field to access a static field
 
             /*
-             * Exemple 3: Array of objects
+             * Concept 3: Array of objects
              */
 
             Console.WriteLine();
@@ -104,12 +104,12 @@ namespace _03_Objet_etAttribut_
 
 
             /*
-             * Exemple 4: List of objects
+             * Concept 4: List of objects
              */
 
 
             /*
-             * Exemple 5: Objects as arguments
+             * Concept 5: Objects as arguments
              */
 
             C5_Car car7 = new C5_Car("Mustang", "red");            
@@ -120,10 +120,10 @@ namespace _03_Objet_etAttribut_
             Console.WriteLine("copy of car 1: " + car8.color + " " + car8.model);
 
         }
-        
+
 
         /*
-         * Exemple 5: Objects as arguments
+         * Concept 5: Objects as arguments
          */
 
         //Method to change color

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _05_Encapsulation
 {
-    internal class Ex3_Personne_Manuelle
+    internal class C3_Personne_Manuelle
     {
 
         //déclaration des attributs

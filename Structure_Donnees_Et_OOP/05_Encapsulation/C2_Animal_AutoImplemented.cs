@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _05_Encapsulation
 {
-    internal class Ex2_Animal_AutoImplemented
+    internal class C2_Animal_AutoImplemented
     {
         /* Auto-Implemented Properties:
          *      C'est une propriété pour laquel on a pas besoin de déclaré d'attribut
@@ -17,7 +17,7 @@ namespace _05_Encapsulation
         public string Type { get; set; } // pas besoin de déclarer un attribut avant
 
         //Constructeur
-        public Ex2_Animal_AutoImplemented(string type)
+        public C2_Animal_AutoImplemented(string type)
         {
             this.Type = type;
         }

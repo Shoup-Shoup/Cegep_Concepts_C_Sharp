@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace _06_Heritage
 {
     //Pour associer cette classe fille a une clase mère il faut faire: nomClasseFille : nomClasseMère
-    internal class Ex1_Bicycle : Ex1_Vehicule
+    internal class C1_Car : C1_Vehicule
     {
-        public int nbWheels = 2;
+        public int nbWheels = 4;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _06_Heritage
 {
-    internal class Ex1_Vehicule
+    internal class C1_Vehicule
     {
         public int speed = 0;
 

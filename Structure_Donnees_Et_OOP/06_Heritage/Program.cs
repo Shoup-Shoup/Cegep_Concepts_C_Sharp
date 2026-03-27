@@ -18,15 +18,15 @@
 
 
             /*
-             * Exemple 1: Heritage de base:  different sorts of vehicules
+             * Concept 1: Heritage de base:  different sorts of vehicules
              */
 
             Console.WriteLine("----------------Vehicules----------------");
             Console.WriteLine();
 
-            Ex1_Car car  = new Ex1_Car();
-            Ex1_Bicycle bicycle = new Ex1_Bicycle();
-            Ex1_Boat boat = new Ex1_Boat();
+            C1_Car car  = new C1_Car();
+            C1_Bicycle bicycle = new C1_Bicycle();
+            C1_Boat boat = new C1_Boat();
 
             Console.WriteLine("car");
             //The object car can access the field speed and method go() even if its not in the car class
@@ -50,15 +50,15 @@
             Console.WriteLine();
 
             /*
-             * Exemple 2: Constructeur hérité et keyword base:
+             * Concept 2: Constructeur hérité et keyword base:
              */
 
             Console.WriteLine("--------------------------Compte Bancaire (constructeur)--------------------------");
 
-            Ex2_CompteEpargne_ConstructeurHeritee epargne1 = new Ex2_CompteEpargne_ConstructeurHeritee(2.4, "mari", "gau");
+            C2_CompteEpargne_ConstructeurHeritee epargne1 = new C2_CompteEpargne_ConstructeurHeritee(2.4, "mari", "gau");
             epargne1.AfficherInfo();
 
-            Ex2_CompteBancaire_Constructeur compte2 = epargne1;
+            C2_CompteBancaire_Constructeur compte2 = epargne1;
 
 
         }

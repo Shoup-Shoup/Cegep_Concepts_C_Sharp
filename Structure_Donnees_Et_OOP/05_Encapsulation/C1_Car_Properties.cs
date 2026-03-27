@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace _05_Encapsulation
 {
-    internal class Ex1_Car_Properties
+    internal class C1_Car_Properties
     {
         private int speed;
 
         //Constructeur
-        public Ex1_Car_Properties(int speed)
+        public C1_Car_Properties(int speed)
         {
             //assigné la propriété Speed au paramètre
             Speed = speed;
