@@ -10,6 +10,7 @@ namespace _07_Polymorphisme
              *      Greek word that means: to have many forms
              *      Permet a une méthode d'avoir des comportements différents selon l'objet qui l'utilise
              *      Objects can be identified by more than one type
+             *      On ne peut pas faire de polymorphisme sans héritage
              */
 
 
@@ -44,7 +45,7 @@ namespace _07_Polymorphisme
             }
 
             /*
-             * Exemple 2: méthode virtual et override
+             * Concept 2: méthode virtual et override
              */
 
             Console.WriteLine();

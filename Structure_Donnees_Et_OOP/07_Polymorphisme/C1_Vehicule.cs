@@ -8,7 +8,7 @@ namespace _07_Polymorphisme
 {
     internal class C1_Vehicule
     {
-        //This is the virtual method explained in the method project. It is going to be override later in the derived classes so that every object from any class can use it
+        //This is the virtual method. It is going to be override later in the derived classes so that every object from any class can use it
         public virtual void Go()
         {
 

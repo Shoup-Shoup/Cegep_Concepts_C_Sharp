@@ -25,6 +25,8 @@ namespace Collection
                 //montantJoueur1{i} += 5; --> pas une syntaxe valide
             }
 
+            const int NOMBRE_JOUEURS = 4;
+
             //Créons un tableau
             //type[] nomDesElements = new type[nombreElements];
             double[] montantJoueursV1 = new double[NOMBRE_JOUEURS]; //CONSTANTES!
@@ -46,6 +48,8 @@ namespace Collection
                 Console.WriteLine(montantJoueursV2[i]);
                 Console.WriteLine(i);
             }
+
+            const int NOMBRE_ELEVES = 3;
 
             //initialiser / défaut (souvent 0 ou "")
             int[] noteEleves = new int[NOMBRE_ELEVES] { 0, 0, 0 };
