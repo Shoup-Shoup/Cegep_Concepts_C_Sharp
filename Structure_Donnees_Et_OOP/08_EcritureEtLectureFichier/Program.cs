@@ -10,12 +10,11 @@
              * Classe StreamWriter:
              *      Permet d'écrir des données dans un fichier, soit en créant un nouveau fichier, soit en écrasant
              *          un fichier existant.
-             * 
              */
 
 
             /*
-             * Concept 1: StreamReader
+             * Concept 1: StreamReader (lire un fichier)
              */
 
             Console.WriteLine();
@@ -56,7 +55,7 @@
 
 
             /*
-             * Concept 3: StreamWriter
+             * Concept 3: StreamWriter (écrir dans un fichier)
              */
 
             StreamWriter writer = new StreamWriter("MyName.csv"); //if the file doesnt exist, the streamwriter class wil create one for us

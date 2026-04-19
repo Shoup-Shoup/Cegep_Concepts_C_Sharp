@@ -18,7 +18,7 @@
              *                      doit être redéfinie dans la classe dérivée (avec override)
              *                  virtual = une méthode virtual autorise la redéfinition par une methode override de la classe dérivée,
              *                      mais ce n'est pas obligatoire
-             *                  override = 
+             *                  override = sert a redéfinir une méthode abstract ou virtuel pour y apporter les spécificité de la classe
              */
 
 
@@ -74,7 +74,15 @@
             //you could also just type the name of the object and it will do the same thing
             Console.WriteLine(car);
 
+            /*
+             * Concept 4: Méthodes abstraites
+             */
 
+            /* Méthodes abstraites:
+             *      Les méthodes abstraites dans une classe de base impose une structure a toutes les classes dérivée
+             *      Elle force la classe dérivé a redéfinir la méthode comme ca il est impossible de l'oublier
+             * 
+             */
         }        
     }
 }

@@ -11,6 +11,13 @@ namespace _07_Polymorphisme
              *      Permet a une méthode d'avoir des comportements différents selon l'objet qui l'utilise
              *      Objects can be identified by more than one type
              *      On ne peut pas faire de polymorphisme sans héritage
+             *      Permet à une même méthode d'avoir plusieurs implémentation différents
+             *      Il existe plusieurs types de polymorphisme:
+             *              -> Statique (surcharge de méthode): définir plusieurs méthodes avec le même nom, mais une signature
+             *              différente, donc des paramètres différents comme le nombre de paramètres, l'orde des paramètre ou le 
+             *              type des variables. Par exemple, quand on écrit plusieurs constructeurs avec des paramètres différents
+             *              -> Dynamique (redéfiniton de la méthode): repose sur l'héritage et les méthodes virtuelle abstract et 
+             *              override. Une métode définie dans une classe parent est redéfinie dans la classe enfant
              */
 
 
@@ -45,7 +52,7 @@ namespace _07_Polymorphisme
             }
 
             /*
-             * Concept 2: méthode virtual et override
+             * Concept 2: méthode virtual et override (polymorphisme dynamique)
              */
 
             Console.WriteLine();
