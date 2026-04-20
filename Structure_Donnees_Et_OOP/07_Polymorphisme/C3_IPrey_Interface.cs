@@ -20,6 +20,7 @@ namespace _07_Polymorphisme
          *          le mot clé override (il est utilisé uniquement lorsque la méthode est hérité d'une classe mère avec des méthode 
          *          virtuelle ou abstraite)
          *      On peut utiliser les classes interfaces pour simuler l'héritage multiple
+         *      Elle ne peut pas être instancier et ne contient aucun attribut
          */
 
 

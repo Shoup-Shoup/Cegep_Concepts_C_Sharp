@@ -18,6 +18,9 @@ namespace _01_Classe
      *      On ne peut pas créer d'instance d'une classe abstraite puisqu'elle contient des méthodes incomplète
      *      Le but est de créer une classe qui fourni la définition commune a toutes les classe dérivé
      *      Toutes les classses dérivées des classes abstraite doivent implémenter toutes les méthode abstraites
+     *      La classe abstraite a quelque méthode défini qui représente le code commun défini de toutes les classes dérivée et à
+     *      quelque méthodes abstraites non-defini qui doivent être défini spécifiquement par la classe dérivée
+     *      Une classe abstraite peut avoir des attributs
      *      
      */
 
